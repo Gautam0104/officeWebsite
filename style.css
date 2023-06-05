@@ -6,6 +6,8 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+   
 
 }
 
@@ -160,7 +162,7 @@ p{
 
 .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
     min-width: 250px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .footer-col-1{
@@ -186,6 +188,18 @@ p{
 
 ul{
     list-style-type: none; 
+    
+}
+
+.footer hr{
+    border: none;
+    background: #fff;
+    height: 2px;
+    margin: 20px 0;
+}
+
+.copyright{
+    text-align: center;
 }
 
 
@@ -285,3 +299,61 @@ form a{
    }
 }
     
+
+
+/* contact page */
+
+.contact-page{
+    padding: 40px 0;
+    background: radial-gradient(#fff, #ffd6d6);
+}
+.contact-form{
+    background: #fff;
+    width: 800px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 10px;
+    margin: auto;
+    box-shadow: 0 0 20 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.contact-form span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100%;
+    display: inline-block;
+}
+
+.form-btn{
+    display: inline-block;
+}
+.contact-form form{
+    max-width: 800px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+}
+
+form input{
+    width: 100%;
+   border-radius: 10px;
+    height: 40px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+
+.form-btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+form .btn:focus{
+    outline: none;
+}
