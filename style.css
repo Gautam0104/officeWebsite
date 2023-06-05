@@ -51,22 +51,22 @@ p{
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 50px;
+
 }
 .col-2{
     flex-basis: 50%;
     max-width: 700px;
 }
 .col-2 img{
-    max-width: 100%;
-    margin-bottom: 100px ;
+  max-width: 100%;
+  padding: 50px 0;
    
 }
 
 .col-2 h1{
     font-size: 50px;
     line-height: 60px;
-    /* margin: 25px 0; */
+    margin: 25px 0;
 }
 
 .btn{
@@ -111,14 +111,15 @@ p{
  
 }
 .swiper{
-    width: 75%;
+    width: 68%;
   
 }
 
-.swiper-container {
-    width: 100%;
-    height: 100%;
-  }
+  .swiper-wrapper .col-4{
+    flex-basis: 15%;
+    text-align: center;
+}
+
   .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -145,7 +146,7 @@ p{
     background: #000;
     color: #8a8a8a;
     font-size: 14px;
-    /* padding: 60px 0 20px; */
+    padding: 60px 0 20px;
 }
 
 .footer p{
@@ -186,3 +187,101 @@ p{
 ul{
     list-style-type: none; 
 }
+
+
+
+/* account page */
+
+.account-page{
+    padding: 40px 0;
+    background: radial-gradient(#fff, #ffd6d6);
+}
+.form-container{
+    background: #fff;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+
+.form-btn{
+    display: inline-block;
+}
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+}
+
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+
+.form-btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+form .btn:focus{
+    outline: none;
+}
+#LogForm{
+    left: -300px;
+}
+#RegForm{
+    left: 0px;
+}
+ 
+form a{
+    font-size: 12px;
+}
+#Indicator{
+    width: 100px;
+    border: none;
+    background: #ff523b;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(150px);
+    transition: transform 1s;
+}
+
+
+
+/* media query for less than 600 screen size */
+@media only screen and (max-width: 800px){
+    nav{
+        flex: 1;
+        text-align: center;
+       
+       }
+    .row{
+        text-align: center;
+    }
+   .col-2, .col-3, .col-4{
+    flex-basis: 100%;
+   }
+   .swiper-wrapper .col-4{
+    flex-basis: 100%;
+   }
+}
+    
